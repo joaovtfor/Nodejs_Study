@@ -1,0 +1,28 @@
+{
+  "name": "pix-backend",
+  "version": "1.0.0",
+  "description": "API backend para sistema Pix",
+  "main": "src/index.ts",
+  "scripts": {
+    "rodar": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "keywords": [
+    "pix",
+    "api",
+    "backend"
+  ],
+  "author": "Diego A. Lusa",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "ts-node-dev": "^2.0.0",
+    "typeorm": "^0.3.26",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  }
+}
