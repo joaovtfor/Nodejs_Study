@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Chave } from "./chave.entity";
 
 @Entity(
     {
@@ -36,4 +37,7 @@ export class Usuario {
         nullable:false
     })
     numero_conta:string 
+
+    @ManyToOne(() => Chave, (chave) => chave.user)
+        chave: Chave
 }
